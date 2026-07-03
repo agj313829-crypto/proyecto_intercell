@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IEEE 830 – INTERCELL | ERS</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="scroll-prog"></div>
+
+<!-- ── SIDEBAR ─────────────────────────────────────── -->
+<nav id="sidenav">
+  <div class="nav-brand">
+    <div class="logo">INTERCELL</div>
+    <div class="badge">IEEE STD 830-1998</div>
+    <img src="img/logopeq.png" alt="">
+  </div>
+  <div class="nav-links">
+    <a href="#hero" class="active"><span class="num">00</span>Portada</a>
+    <a href="#intro"><span class="num">01</span>Introducción</a>
+    <a href="#situacion"><span class="num">1.1</span>Situación Problema</a>
+<a href="#pregunta"><span class="num">1.2</span>Pregunta Problema</a>
+<a href="#objetivog"><span class="num">1.3</span>Objetivo General</a>
+<a href="#objetivose"><span class="num">1.4</span>Objetivos Específicos</a>
+
+<a href="#arquitectura"><span class="num">04</span>Arquitectura</a>
+<a href="#diagramaclases"><span class="num">05</span>Diagrama de Clases</a>
+<a href="#mer"><span class="num">06</span>Diagrama MER</a>
+<a href="#patrones"><span class="num">07</span>Patrones</a>
+<a href="#estandares"><span class="num">08</span>Estándares</a>
+<a href="#metodologia"><span class="num">09</span>Metodología</a>
+<a href="#scrum"><span class="num">10</span>SCRUM</a>
+<a href="#marca"><span class="num">11</span>Manual de Marca</a>
+    <a href="#alcance"><span class="num">1.2</span>Alcance del Sistema</a>
+    <a href="#personal"><span class="num">1.3</span>Personal Involucrado</a>
+    <a href="#descripcion"><span class="num">02</span>Descripción General</a>
+    <a href="#funcionalidades"><span class="num">2.2</span>Funcionalidades</a>
+    <a href="#restricciones"><span class="num">2.4</span>Restricciones</a>
+    <a href="#requisitos"><span class="num">03</span>Req. Funcionales</a>
+    <a href="#nofuncionales"><span class="num">3.3</span>Req. No Funcionales</a>
+    <a href="#stack"><span class="num">A1</span>Stack Tecnológico</a>
+    <a href="#evolucion"><span class="num">A2</span>Evolución del Sistema</a>
+  </div>
+  <div class="nav-footer">
+    Ficha: 3275760<br>
+    Validado: 01/07/2026
+  </div>
+</nav>
+
+<!-- ── HAMBURGER (móvil) ────────────────────────────── -->
+<button id="hamburger" aria-label="Menú">
+  <span></span><span></span><span></span>
+</button>
+<div id="overlay"></div>
+
+<!-- ── MAIN ────────────────────────────────────────── -->
+<div id="main">
+
+  <!-- HERO / PORTADA -->
+  <section id="hero">
+    <div class="hero-eyebrow">Especificación de Requisitos de Software</div>
+    <h1 class="hero-title">INTER<span>CELL</span></h1>
+    <p class="hero-subtitle">Plataforma web para la venta de tecnología de alta gama, accesorios, computadores, tablets y servicios de mantenimiento técnico.</p>
+    <div class="cover-info-grid">
+      <div class="info-block">
+        <div class="info-block-label">Norma aplicada</div>
+        <div class="info-block-val">IEEE Std 830-1998<br><span class="sub">Recommended Practice for Software Requirements Specifications</span></div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">Tipo de Sistema</div>
+        <div class="info-block-val">Plataforma Web E-Commerce<br><span class="sub">Responsive — Multi-dispositivo</span></div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">Autora / Analista</div>
+        <div class="info-block-val">María Camila Ortiz Gaitán<br><span class="sub">Estudiante ADSO · Ficha 3275760</span></div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">Fecha de validación</div>
+        <div class="info-block-val">01 de julio de 2026<br><span class="sub">Versión 0.3 del documento</span></div>
+      </div>
+    </div>
+    <div class="scroll-hint">Desplázate para explorar</div>
+  </section>
+
+  <!-- 1. INTRODUCCIÓN -->
+  <section class="section" id="intro">
+    <div class="section-label">Sección 1 · IEEE 830</div>
+    <h2 class="section-title">Introducción</h2>
+    <section class="section" id="situacion">
+        
+
+<div class="section-label">
+1.1 
+</div>
+</section>
+
+<h2 class="section-title">
+Situación Problema
+</h2>
+
+<p class="section-intro">
+
+Actualmente INTERCELL realiza gran parte de sus procesos comerciales de forma presencial y mediante redes sociales, lo que dificulta el control de inventarios, el seguimiento de pedidos, la administración de clientes y la prestación de servicios técnicos.
+
+La ausencia de una plataforma centralizada genera retrasos en la atención, pérdida de información, dificultades para consultar la disponibilidad de productos y poca automatización en los procesos administrativos.
+
+Además, los clientes no cuentan con una herramienta que les permita realizar compras en línea, consultar el estado de sus pedidos o solicitar servicios técnicos de manera rápida y segura.
+
+Debido a estas limitaciones surge la necesidad de desarrollar una plataforma web moderna que centralice toda la información del negocio y permita optimizar los procesos comerciales y administrativos de INTERCELL.
+
+</p>
+<section class="section" id="pregunta">
+
+<div class="section-label">
+1.2 
+</div>
+
+
+<h2 class="section-title">
+Pregunta Problema
+</h2>
+
+<p class="section-intro">
+
+¿Por que no hay tanta visibilidad del negocio intercell en la era digital ?
+</p>
+
+<section class="section" id="objetivog">
+
+<div class="section-label">
+1.3 Proyecto
+</div>
+
+<h2 class="section-title">
+Objetivo General
+</h2>
+
+<p class="section-intro">
+
+Desarrollar una plataforma web para INTERCELL que permita administrar la comercialización de productos tecnológicos y la gestión de servicios técnicos mediante una solución informática segura, eficiente, escalable y accesible desde cualquier dispositivo.
+
+</p>
+
+</section>
+
+<section class="section" id="objetivose">
+
+<div class="section-label">
+1.4 Proyecto
+</div>
+
+<h2 class="section-title">
+Objetivos Específicos
+</h2>
+
+<div class="req-list">
+
+<div class="req-item single">
+<div class="req-text">
+Analizar los requerimientos funcionales y no funcionales del sistema mediante el levantamiento y documentación de las necesidades del negocio INTERCELL</div>
+</div>
+
+<div class="req-item single">
+<div class="req-text">
+Diseñar la arquitectura, la base de datos y las interfaces del sistema web de INTERCELL de acuerdo con los requerimientos establecidos.
+</div>
+</div>
+
+<div class="req-item single">
+<div class="req-text">
+Desarrollar la plataforma web implementando los módulos funcionales definidos para la gestión de productos, ventas, usuarios y servicios técnicos.
+</div>
+</div>
+
+<div class="req-item single">
+<div class="req-text">
+Realizar pruebas funcionales y de validación para verificar el correcto funcionamiento de la plataforma y el cumplimiento de los requisitos establecidos.
+</div>
+</div>
+
+<div class="req-item single">
+<div class="req-text">
+Implementar la plataforma web y elaborar la documentación técnica y de usuario para facilitar su puesta en funcionamiento y mantenimiento.
+
+</div>
+
+
+<section>
+    <p class="section-intro">El crecimiento del comercio electrónico ha transformado la forma en que los negocios tecnológicos llegan a sus clientes. INTERCELL nace como respuesta digital a esa necesidad.</p>
+    <blockquote class="ieee-quote">
+      "El presente proyecto tiene como finalidad el desarrollo de una plataforma web para INTERCELL, un negocio dedicado a la comercialización de celulares de alta gama, accesorios tecnológicos y servicios de mantenimiento. La plataforma permite a los clientes consultar productos, comparar precios, realizar compras en línea y acceder a información de servicio de manera eficiente y segura."
+      <cite>— Documento ERS · Sección 1.1 Propósito</cite>
+    </blockquote>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">🎯</div>
+        <div class="card-title">Propósito del Documento</div>
+        <div class="card-body">Especificar los requerimientos funcionales y no funcionales del sistema web INTERCELL bajo la norma IEEE 830, estableciendo una guía clara para el diseño, desarrollo e implementación.</div>
+        <div class="card-tag">IEEE 830 §1.1</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">📋</div>
+        <div class="card-title">Estructura del Documento</div>
+        <div class="card-body">Introducción general · Descripción global del sistema · Requisitos funcionales y no funcionales · Restricciones y dependencias · Interfaces del sistema · Apéndices.</div>
+        <div class="card-tag">IEEE 830 §1.6</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">📐</div>
+        <div class="card-title">Norma de Referencia</div>
+        <div class="card-body">IEEE Std 830-1998 · ISO/IEC 25010 (Calidad del software) · HTML5 W3C · MySQL Oracle 2024. Todas las secciones siguen la estructura recomendada por la norma.</div>
+        <div class="card-tag">IEEE 830 §1.5</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1.2 ALCANCE -->
+  <section class="section" id="alcance">
+    <div class="section-label">Sección 1.2 · IEEE 830</div>
+    <h2 class="section-title">Alcance del Sistema</h2>
+    <p class="section-intro">INTERCELL abarca múltiples líneas de negocio integradas en una única plataforma web.</p>
+    <div class="scope-items">
+      <div class="scope-item"><div class="scope-dot"></div>Venta de celulares de alta gama</div>
+      <div class="scope-item"><div class="scope-dot"></div>Venta de accesorios tecnológicos</div>
+      <div class="scope-item"><div class="scope-dot"></div>Venta de computadores y tablets</div>
+      <div class="scope-item"><div class="scope-dot"></div>Gestión de mantenimiento y reparación</div>
+      <div class="scope-item"><div class="scope-dot"></div>Administración de pedidos y clientes</div>
+      <div class="scope-item"><div class="scope-dot"></div>Seguimiento de compras y servicios</div>
+      <div class="scope-item"><div class="scope-dot"></div>Comunicación clientes ↔ administradores</div>
+    </div>
+    <div class="subsection">
+      <div class="section-label">Definiciones, Acrónimos y Abreviaturas · §1.4</div>
+      <div class="acronym-grid">
+        <div class="restrict-item"><span class="restrict-code">IEEE 830</span>Norma internacional para especificación de requerimientos de software</div>
+        <div class="restrict-item"><span class="restrict-code">ERS</span>Especificación de Requerimientos de Software</div>
+        <div class="restrict-item"><span class="restrict-code">Checkout</span>Proceso de finalización de compra en línea</div>
+        <div class="restrict-item"><span class="restrict-code">Responsive</span>Diseño adaptable a cualquier dispositivo</div>
+        <div class="restrict-item"><span class="restrict-code">HTTPS</span>Protocolo seguro de transferencia de datos</div>
+        <div class="restrict-item"><span class="restrict-code">CRM</span>Sistema de gestión de relaciones con clientes</div>
+        <div class="restrict-item"><span class="restrict-code">ERP</span>Planificación de recursos empresariales</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1.3 PERSONAL -->
+  <section class="section" id="personal">
+    <div class="section-label">Sección 1.3 · IEEE 830</div>
+    <h2 class="section-title">Personal Involucrado</h2>
+    <p class="section-intro">Roles y responsabilidades definidos para el proyecto INTERCELL.</p>
+    <div class="people-cards">
+      <div class="person-card">
+        <div class="person-avatar">👩‍💻</div>
+        <div class="person-name">María Camila Ortiz Gaitán</div>
+        <div class="person-role">Estudiante / Analista</div>
+        <div class="person-resp">Levantamiento de requisitos, documentación y diseño del sistema. Programa ADSO.</div>
+      </div>
+      <div class="person-card">
+        <div class="person-avatar">🏢</div>
+        <div class="person-name">Administrador INTERCELL</div>
+        <div class="person-role">Cliente / Stakeholder</div>
+        <div class="person-resp">Validación de requisitos y aprobación funcional. Sector comercio tecnológico.</div>
+      </div>
+      <div class="person-card">
+        <div class="person-avatar">⚙️</div>
+        <div class="person-name">Equipo de Desarrollo</div>
+        <div class="person-role">Desarrolladores ADSO</div>
+        <div class="person-resp">Implementación, pruebas y despliegue del sistema web INTERCELL.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. DESCRIPCIÓN GENERAL -->
+  <section class="section" id="descripcion">
+    <div class="section-label">Sección 2 · IEEE 830</div>
+    <h2 class="section-title">Descripción General del Sistema</h2>
+    <p class="section-intro">INTERCELL es una plataforma web independiente que integra comercio electrónico con gestión de servicios técnicos.</p>
+    <div class="cards-grid">
+      <div class="card"><div class="card-icon">🔐</div><div class="card-title">Módulo de Autenticación</div><div class="card-body">Registro, inicio de sesión y recuperación de contraseña con separación de roles.</div></div>
+      <div class="card"><div class="card-icon">🛍️</div><div class="card-title">Catálogo de Productos</div><div class="card-body">Navegación por categorías, búsqueda avanzada y filtros por precio, marca y disponibilidad.</div></div>
+      <div class="card"><div class="card-icon">🛒</div><div class="card-title">Carrito de Compras</div><div class="card-body">Gestión de carrito, modificación de cantidades y proceso de checkout integrado.</div></div>
+      <div class="card"><div class="card-icon">💳</div><div class="card-title">Pasarela de Pagos</div><div class="card-body">Integración con servicios externos de pago autorizados y procesamiento seguro.</div></div>
+      <div class="card"><div class="card-icon">📦</div><div class="card-title">Gestión de Inventario</div><div class="card-body">Control de existencias, disponibilidad y administración de promociones.</div></div>
+      <div class="card"><div class="card-icon">🔧</div><div class="card-title">Servicios Técnicos</div><div class="card-body">Registro y seguimiento de mantenimientos y reparaciones de dispositivos.</div></div>
+      <div class="card"><div class="card-icon">📊</div><div class="card-title">Panel Administrativo</div><div class="card-body">Gestión completa de productos, pedidos, usuarios y notificaciones.</div></div>
+      <div class="card"><div class="card-icon">🔔</div><div class="card-title">Sistema de Notificaciones</div><div class="card-body">Envío automático de correos sobre confirmaciones de compra y estado de pedidos.</div></div>
+    </div>
+  </section>
+
+  <section class="section" id="arquitectura">
+
+<div class="section-label">
+Arquitectura del Sistema
+</div>
+
+<h2 class="section-title">
+Arquitectura del Software
+</h2>
+
+<p class="section-intro">
+
+INTERCELL implementa una arquitectura en tres capas (Three-Tier Architecture), la cual permite separar la interfaz de usuario, la lógica del negocio y el almacenamiento de datos. Esta estructura facilita el mantenimiento, la escalabilidad y la reutilización del código.
+
+</p>
+
+<div class="cards-grid">
+
+<div class="card">
+
+<div class="card-icon">🖥️</div>
+
+<div class="card-title">
+Capa de Presentación
+</div>
+
+<div class="card-body">
+
+Compuesta por HTML5, CSS3, JavaScript y Bootstrap. Es la encargada de la interacción entre el usuario y el sistema.
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">⚙️</div>
+
+<div class="card-title">
+Capa de Negocio
+</div>
+
+<div class="card-body">
+
+Implementada en PHP. Contiene toda la lógica de autenticación, compras, inventario, pedidos y servicios técnicos.
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">🗄️</div>
+
+<div class="card-title">
+Capa de Datos
+</div>
+
+<div class="card-body">
+
+Compuesta por MySQL, donde se almacenan usuarios, productos, pedidos, pagos, inventario y demás información del sistema.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="section-label">
+Arquitectura Física
+</div>
+
+<h2 class="section-title">
+Diagrama de Arquitectura
+</h2>
+
+
+<div style="background:#10151f;
+padding:40px;
+border-radius:15px;
+text-align:center;
+font-family:monospace;
+font-size:18px;
+line-height:2.1;">
+
+<img src="img/diagramadearquitectura.jpeg"
+     alt="Diagrama de Arquitectura"
+     style="display:block;width:60%;max-width:700px;height:auto;margin:0 auto;">
+
+
+</div>
+
+</section>
+
+<section class="section" id="diagramaclases">
+
+<div class="section-label">
+Modelo UML
+</div>
+
+<h2 class="section-title">
+Diagrama de Clases 
+ diagrama MER 
+  diagrama modelo logico 
+   diagrama modelo fisico 
+    diagrama relacional 
+     diagrama mapa de navegacion 
+     diagrama casos de uso 
+      diagrama procesos de compra 
+</h2>
+<img src="img/diagramadeclases.png" alt="">
+<img src="img/05_diagrama_modelo_logico.png" alt="">
+<img src="img/06_diagrama_modelo_fisico.png" alt="">
+<img src="img/07_diagrama_relacional.png" alt="">
+<img src="img/08_diagrama_mapa_de_navegacion.png" alt="">
+<img src="img/diagramacasosdeuso.jpeg" alt="">
+<img src="img/diagramaprocesosdecompra.jpeg" alt="">
+
+
+
+<section class="section" id="mer">
+
+    <div class="section-label">
+        Base de Datos
+    </div>
+
+    <h2 class="section-title">
+        Modelo Entidad Relación (MER)
+    </h2>
+
+    <div style="background:#111827;
+    padding:30px;
+    border-radius:15px;
+    font-family:monospace;
+    overflow:auto;">
+
+        <img src="img/04_diagrama_mer.png" alt="">
+
+    </div>
+
+</section>
+
+<p class="section-intro">
+
+Relaciones principales:
+
+• Un usuario puede realizar muchos pedidos.
+
+• Un pedido puede contener varios productos.
+
+• Un producto pertenece a una categoría.
+
+• Cada producto posee un registro de inventario.
+
+• Los servicios técnicos se asocian a los productos registrados.
+
+</p>
+
+</section>
+
+  <!-- 2.2 FUNCIONALIDADES -->
+  <section class="section" id="funcionalidades">
+    <div class="section-label">Sección 2.2 · IEEE 830</div>
+    <h2 class="section-title">Funcionalidades del Producto</h2>
+    <p class="section-intro">Capacidades principales para los dos tipos de usuario del sistema.</p>
+    <div class="func-grid">
+      <div>
+        <div class="section-label">👤 Usuario Cliente</div>
+        <div class="req-list">
+          <div class="req-item single"><div class="req-text">Registro, inicio de sesión y recuperación de contraseña</div></div>
+          <div class="req-item single"><div class="req-text">Navegación y búsqueda de productos por categorías</div></div>
+          <div class="req-item single"><div class="req-text">Filtrado por precio, marca, disponibilidad y calificación</div></div>
+          <div class="req-item single"><div class="req-text">Gestión del carrito y proceso de compra (checkout)</div></div>
+          <div class="req-item single"><div class="req-text">Seguimiento e historial de pedidos</div></div>
+          <div class="req-item single"><div class="req-text">Lista de favoritos, calificaciones y reseñas</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="section-label">🛠️ Administrador</div>
+        <div class="req-list">
+          <div class="req-item single"><div class="req-text">Gestión de productos (agregar, editar, eliminar)</div></div>
+          <div class="req-item single"><div class="req-text">Control de inventario y disponibilidad</div></div>
+          <div class="req-item single"><div class="req-text">Actualización de estado de pedidos</div></div>
+          <div class="req-item single"><div class="req-text">Registro y gestión de servicios técnicos</div></div>
+          <div class="req-item single"><div class="req-text">Publicación de promociones y descuentos</div></div>
+          <div class="req-item single"><div class="req-text">Administración de usuarios y envío de notificaciones</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2.4 RESTRICCIONES -->
+  <section class="section" id="restricciones">
+    <div class="section-label">Sección 2.4 · IEEE 830</div>
+    <h2 class="section-title">Restricciones del Sistema</h2>
+    <p class="section-intro">Condiciones y límites que el sistema debe cumplir obligatoriamente.</p>
+    <div class="restrict-grid">
+      <div class="restrict-item"><span class="restrict-code">RS-01</span>Funcionará únicamente con conexión a internet</div>
+      <div class="restrict-item"><span class="restrict-code">RS-02</span>Aplicación web responsive: PC, tablet y celular</div>
+      <div class="restrict-item"><span class="restrict-code">RS-03</span>Compatible con Chrome, Edge y Mozilla Firefox</div>
+      <div class="restrict-item"><span class="restrict-code">RS-04</span>Base de datos relacional — MySQL preferiblemente</div>
+      <div class="restrict-item"><span class="restrict-code">RS-05</span>Panel administrativo solo para usuarios autorizados</div>
+      <div class="restrict-item"><span class="restrict-code">RS-06</span>Transmisión de datos sensibles mediante HTTPS</div>
+      <div class="restrict-item"><span class="restrict-code">RS-07</span>Dependencia de hosting, dominio y pasarelas externas</div>
+      <div class="restrict-item"><span class="restrict-code">RS-08</span>Compras sujetas a disponibilidad de inventario</div>
+      <div class="restrict-item"><span class="restrict-code">RS-09</span>Cumplimiento de normas de protección de datos</div>
+      <div class="restrict-item"><span class="restrict-code">RS-10</span>Desarrollo bajo buenas prácticas de programación</div>
+      <div class="restrict-item"><span class="restrict-code">RS-11</span>Diseño adaptable para garantizar accesibilidad móvil</div>
+      <div class="restrict-item"><span class="restrict-code">RS-12</span>Mantenimiento y actualizaciones periódicas requeridas</div>
+      <div class="restrict-item"><span class="restrict-code">RS-13</span>Registro/login obligatorio para compras e historial</div>
+      <div class="restrict-item"><span class="restrict-code">RS-14</span>Dependencia de correo electrónico para notificaciones</div>
+      <div class="restrict-item"><span class="restrict-code">RS-15</span>Soporte mínimo para 500 usuarios concurrentes</div>
+    </div>
+  </section>
+
+  <!-- 3.2 REQUISITOS FUNCIONALES -->
+  <section class="section" id="requisitos">
+    <div class="section-label">Sección 3.2 · IEEE 830</div>
+    <h2 class="section-title">Requisitos Funcionales</h2>
+    <p class="section-intro">25 requisitos funcionales identificados y documentados para INTERCELL.</p>
+    <div class="req-list">
+      <div class="req-item"><div class="req-num">RF-01</div><div class="req-text"><strong>Registro de Usuario</strong>Crear cuenta con nombre, correo electrónico y contraseña.</div><div class="req-badge badge-alta">ALTA</div></div>
+      <div class="req-item"><div class="req-num">RF-02</div><div class="req-text"><strong>Inicio de Sesión</strong>Ingreso mediante credenciales válidas de usuario.</div><div class="req-badge badge-alta">ALTA</div></div>
+      <div class="req-item"><div class="req-num">RF-03</div><div class="req-text"><strong>Recuperación de Contraseña</strong>Restablecer contraseña mediante enlace enviado al correo.</div><div class="req-badge badge-alta">ALTA</div></div>
+      <div class="req-item"><div class="req-num">RF-04</div><div class="req-text"><strong>Exploración de Categorías</strong>Navegar entre celulares, accesorios, tablets, computadores y mantenimiento.</div><div class="req-badge badge-alta">ALTA</div></div>
+      <div class="req-item"><div class="req-num">RF-05</div><div class="req-text"><strong>Búsqueda de Productos</strong>Buscar por nombre, marca o categoría con resultados relevantes.</div><div class="req-badge badge-alta">ALTA</div></div>
+      <div class="req-item"><div class="req-num">RF-06</div><div class="req-text"><strong>Filtrar Productos</strong>Filtrado por precio, marca, disponibilidad y calificación del producto.</div><div class="req-badge badge-media">MEDIA</div></div>
+      <div class="req-item"><div class="req-num">RF-07</div><div class="req-text"><strong>Detalle de Producto</strong>Visualizar imágenes, descripción, características y precio de cada producto.</div><div class="req-badge badge-alta">ALTA</div></div>
+      <div class="req-item"><div class="req-num">RF-08</div><div class="req-text"><strong>Agregar al Carrito</strong>Añadir productos al carrito de compras desde el catálogo.</div><div class="req-badge badge-alta">ALTA</div></div>
+      <div class="req-item"><div class="req-num">RF-09</div><div class="req-text"><strong>Modificar Carrito</strong>Aumentar o disminuir cantidades de productos en el carrito.</div><div class="req-badge badge-alta">ALTA</div></div>
+      <div class="req-item"><div class="req-num">RF-10</div><div class="req-text"><strong>Eliminar del Carrito</strong>Remover productos seleccionados del carrito de compras.</div><div class="req-badge badge-alta">ALTA</div></div>
+      <div class="req-item"><div class="req-num">RF-11</div><div class="req-text"><strong>Realizar Compra</strong>Confirmar pedidos mediante el proceso de checkout completo.</div><div class="req-badge badge-alta">ALTA</div></div>
+      <div class="req-item"><div class="req-num">RF-12</div><div class="req-text"><strong>Gestión de Pagos</strong>Procesar pagos mediante pasarelas autorizadas de forma segura.</div><div class="req-badge badge-alta">ALTA</div></div>
+      <div class="req-item"><div class="req-num">RF-13</div><div class="req-text"><strong>Historial de Pedidos</strong>Consultar compras anteriores con detalles del pedido.</div><div class="req-badge badge-media">MEDIA</div></div>
+      <div class="req-item"><div class="req-num">RF-14</div><div class="req-text"><strong>Seguimiento de Pedidos</strong>Visualizar el estado actual del pedido (pendiente, enviado, entregado).</div><div class="req-badge badge-media">MEDIA</div></div>
+      <div class="req-item"><div class="req-num">RF-15</div><div class="req-text"><strong>Lista de Favoritos</strong>Guardar productos de interés para compra futura.</div><div class="req-badge badge-baja">BAJA</div></div>
+      <div class="req-item"><div class="req-num">RF-16</div><div class="req-text"><strong>Calificaciones y Reseñas</strong>Calificar y opinar sobre productos adquiridos.</div><div class="req-badge badge-baja">BAJA</div></div>
+      <div class="req-item"><div class="req-num">RF-17</div><div class="req-text"><strong>Edición de Perfil</strong>Modificar datos personales del usuario registrado.</div><div class="req-badge badge-media">MEDIA</div></div>
+      <div class="req-item"><div class="req-num">RF-18</div><div class="req-text"><strong>Gestión de Productos [Admin]</strong>Agregar, editar y eliminar productos del catálogo.</div><div class="req-badge badge-alta">ALTA</div></div>
+      <div class="req-item"><div class="req-num">RF-19</div><div class="req-text"><strong>Gestión de Inventario [Admin]</strong>Controlar existencias y disponibilidad de productos.</div><div class="req-badge badge-alta">ALTA</div></div>
+      <div class="req-item"><div class="req-num">RF-20</div><div class="req-text"><strong>Gestión de Pedidos [Admin]</strong>Actualizar el estado de los pedidos de los clientes.</div><div class="req-badge badge-alta">ALTA</div></div>
+      <div class="req-item"><div class="req-num">RF-21</div><div class="req-text"><strong>Servicios Técnicos [Admin]</strong>Registrar mantenimientos y reparaciones de dispositivos.</div><div class="req-badge badge-alta">ALTA</div></div>
+      <div class="req-item"><div class="req-num">RF-22</div><div class="req-text"><strong>Gestión de Promociones [Admin]</strong>Publicar promociones, descuentos y ofertas especiales.</div><div class="req-badge badge-media">MEDIA</div></div>
+      <div class="req-item"><div class="req-num">RF-23</div><div class="req-text"><strong>Gestión de Usuarios [Admin]</strong>Visualizar y administrar los usuarios registrados.</div><div class="req-badge badge-media">MEDIA</div></div>
+      <div class="req-item"><div class="req-num">RF-24</div><div class="req-text"><strong>Envío de Notificaciones</strong>Mensajes automáticos sobre confirmaciones y estado de pedidos.</div><div class="req-badge badge-alta">ALTA</div></div>
+      <div class="req-item"><div class="req-num">RF-25</div><div class="req-text"><strong>Atención al Cliente</strong>Canales de comunicación directa entre clientes y administradores.</div><div class="req-badge badge-media">MEDIA</div></div>
+    </div>
+  </section>
+
+  <!-- 3.3 NO FUNCIONALES -->
+  <section class="section" id="nofuncionales">
+    <div class="section-label">Sección 3.3 · IEEE 830</div>
+    <h2 class="section-title">Requisitos No Funcionales</h2>
+    <p class="section-intro">Atributos de calidad del sistema basados en ISO/IEC 25010.</p>
+    <div class="nf-grid">
+      <div class="nf-block">
+        <div class="nf-block-title">⚡ Rendimiento</div>
+        <div class="nf-row"><span class="nf-key">Tiempo de respuesta</span><span class="nf-val">&lt; 3 segundos</span></div>
+        <div class="nf-row"><span class="nf-key">Disponibilidad</span><span class="nf-val">99.9% mensual</span></div>
+        <div class="nf-row"><span class="nf-key">Usuarios concurrentes</span><span class="nf-val">≥ 500 simultáneos</span></div>
+      </div>
+      <div class="nf-block">
+        <div class="nf-block-title">🔒 Seguridad</div>
+        <div class="nf-row"><span class="nf-key">Cifrado</span><span class="nf-val">HTTPS obligatorio</span></div>
+        <div class="nf-row"><span class="nf-key">Protección</span><span class="nf-val">Anti SQL-Injection, XSS, CSRF</span></div>
+        <div class="nf-row"><span class="nf-key">Sesiones</span><span class="nf-val">Expiración 30 min</span></div>
+        <div class="nf-row"><span class="nf-key">Control de acceso</span><span class="nf-val">Separación de roles</span></div>
+      </div>
+      <div class="nf-block">
+        <div class="nf-block-title">🛡️ Fiabilidad</div>
+        <div class="nf-row"><span class="nf-key">Recuperación ante fallos</span><span class="nf-val">Automática</span></div>
+        <div class="nf-row"><span class="nf-key">Integridad de datos</span><span class="nf-val">Cero pérdida</span></div>
+        <div class="nf-row"><span class="nf-key">Actualizaciones</span><span class="nf-val">Sin detener el sistema</span></div>
+      </div>
+      <div class="nf-block">
+        <div class="nf-block-title">🌐 Portabilidad</div>
+        <div class="nf-row"><span class="nf-key">Código</span><span class="nf-val">Modular y documentado</span></div>
+        <div class="nf-row"><span class="nf-key">Compatibilidad</span><span class="nf-val">Chrome, Edge, Firefox</span></div>
+        <div class="nf-row"><span class="nf-key">Responsive</span><span class="nf-val">Todos los dispositivos</span></div>
+        <div class="nf-row"><span class="nf-key">Datos personales</span><span class="nf-val">Ley colombiana</span></div>
+      </div>
+      
+    </div>
+    <div class="progress-section">
+      <div class="section-label">Cobertura ISO/IEC 25010</div>
+      <div class="progress-list">
+        <div class="progress-item"><div class="progress-header"><span>Rendimiento</span><span class="val">Alta prioridad</span></div><div class="progress-bar"><div class="progress-fill" style="width:95%"></div></div></div>
+        <div class="progress-item"><div class="progress-header"><span>Seguridad</span><span class="val">Alta prioridad</span></div><div class="progress-bar"><div class="progress-fill" style="width:90%"></div></div></div>
+        <div class="progress-item"><div class="progress-header"><span>Fiabilidad</span><span class="val">Alta prioridad</span></div><div class="progress-bar"><div class="progress-fill" style="width:85%"></div></div></div>
+        <div class="progress-item"><div class="progress-header"><span>Usabilidad</span><span class="val">Media-Alta</span></div><div class="progress-bar"><div class="progress-fill" style="width:80%"></div></div></div>
+        <div class="progress-item"><div class="progress-header"><span>Mantenibilidad</span><span class="val">Media</span></div><div class="progress-bar"><div class="progress-fill" style="width:70%"></div></div></div>
+        <div class="progress-item"><div class="progress-header"><span>Portabilidad</span><span class="val">Media</span></div><div class="progress-bar"><div class="progress-fill" style="width:65%"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK TECNOLÓGICO -->
+  <section class="section" id="stack">
+    <div class="section-label">Apéndice 1 · Tecnologías</div>
+    <h2 class="section-title">Stack Tecnológico</h2>
+    <p class="section-intro">Tecnologías seleccionadas para el desarrollo de INTERCELL.</p>
+    <div class="table-wrapper">
+      <table class="stack-table">
+        <thead>
+          <tr><th>Área</th><th>Tecnología</th><th>Justificación</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong class="area-label">Frontend</strong></td>
+            <td><span class="tech-chip">HTML5</span><span class="tech-chip">CSS3</span><span class="tech-chip">JavaScript</span><span class="tech-chip">Bootstrap</span></td>
+            <td class="justify">Estándar web W3C. Bootstrap garantiza diseño responsive y compatibilidad cross-browser.</td>
+          </tr>
+          <tr>
+            <td><strong class="area-label">Backend</strong></td>
+            <td><span class="tech-chip">PHP</span><span class="tech-chip green">Node.js</span></td>
+            <td class="justify">PHP por madurez en hosting compartido. Node.js como alternativa para mayor escalabilidad.</td>
+          </tr>
+          <tr>
+            <td><strong class="area-label">Base de Datos</strong></td>
+            <td><span class="tech-chip">MySQL</span></td>
+            <td class="justify">Sistema relacional robusto, gratuito bajo licencia GPL con amplia documentación.</td>
+          </tr>
+          <tr>
+            <td><strong class="area-label">Hosting</strong></td>
+            <td><span class="tech-chip">Servidor Web + SSL</span></td>
+            <td class="justify">Certificado SSL para garantizar protocolo HTTPS en todas las comunicaciones.</td>
+          </tr>
+          <tr>
+            <td><strong class="area-label">Comunicación</strong></td>
+            <td><span class="tech-chip">API REST</span><span class="tech-chip">HTTPS</span><span class="tech-chip">SMTP</span></td>
+            <td class="justify">Arquitectura orientada a servicios que facilita integraciones futuras con ERP y CRM.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="subsection">
+      <div class="section-label">Interfaces del Sistema · §3.1</div>
+      <div class="cards-grid">
+        <div class="card"><div class="card-icon">🖥️</div><div class="card-title">Interfaces de Usuario §3.1.1</div><div class="card-body">Diseño responsive, colores corporativos modernos, navegación intuitiva y formularios accesibles.</div></div>
+        <div class="card"><div class="card-icon">💻</div><div class="card-title">Interfaces de Hardware §3.1.2</div><div class="card-body">PC, laptops, smartphones Android/iOS y tablets. Compatible con banda ancha y datos móviles.</div></div>
+        <div class="card"><div class="card-icon">🔗</div><div class="card-title">Interfaces de Software §3.1.3</div><div class="card-body">Navegadores modernos, pasarela de pagos y API de correo electrónico para notificaciones.</div></div>
+        <div class="card"><div class="card-icon">📡</div><div class="card-title">Interfaces de Comunicación §3.1.4</div><div class="card-body">Protocolo HTTPS, TCP/IP, servicios API REST y correos automáticos del sistema.</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="patrones">
+
+<div class="section-label">
+Ingeniería de Software
+</div>
+
+<h2 class="section-title">
+Patrones de Diseño
+</h2>
+
+<p class="section-intro">
+
+El desarrollo de INTERCELL implementa patrones de diseño que permiten obtener un software modular, escalable y de fácil mantenimiento.
+
+</p>
+
+<div class="cards-grid">
+
+<div class="card">
+
+<div class="card-icon">🏛️</div>
+
+<div class="card-title">
+MVC
+</div>
+
+<div class="card-body">
+
+Se emplea el patrón Modelo-Vista-Controlador para separar la interfaz gráfica, la lógica del negocio y el acceso a los datos.
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">🗄️</div>
+
+<div class="card-title">
+DAO
+</div>
+
+<div class="card-body">
+
+El patrón Data Access Object centraliza todas las operaciones realizadas sobre la base de datos.
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">🔒</div>
+
+<div class="card-title">
+Singleton
+</div>
+
+<div class="card-body">
+
+Se utiliza para garantizar una única conexión activa hacia la base de datos.
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">📦</div>
+
+<div class="card-title">
+Repository
+</div>
+
+<div class="card-body">
+
+Facilita la separación entre la lógica del negocio y el almacenamiento de la información.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="estandares">
+
+<div class="section-label">
+Normas Aplicadas
+</div>
+
+<h2 class="section-title">
+Estándares de Desarrollo
+</h2>
+
+<p class="section-intro">
+
+INTERCELL fue diseñado siguiendo estándares internacionales que garantizan calidad, seguridad y mantenibilidad del software.
+
+</p>
+
+<div class="restrict-grid">
+
+<div class="restrict-item">
+<span class="restrict-code">IEEE 830</span>
+Especificación de Requisitos de Software.
+</div>
+
+<div class="restrict-item">
+<span class="restrict-code">ISO 25010</span>
+Modelo internacional para calidad del software.
+</div>
+
+
+
+<div class="restrict-item">
+<span class="restrict-code">CSS3</span>
+Diseño y presentación visual.
+</div>
+
+
+<div class="restrict-item">
+<span class="restrict-code">W3C</span>
+Buenas prácticas para aplicaciones web.
+</div>
+
+<div class="restrict-item">
+<span class="restrict-code">OWASP</span>
+Recomendaciones internacionales para seguridad informática.
+
+</div>
+
+<div class="restrict-item">
+<span class="restrict-code">Responsive Design</span>
+Adaptabilidad para cualquier dispositivo.
+
+</div>
+
+<div class="restrict-item">
+<span class="restrict-code">Git</span>
+Control de versiones durante el desarrollo.
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="metodologia">
+
+<div class="section-label">
+Gestión del Proyecto
+</div>
+
+<h2 class="section-title">
+
+
+
+
+
+
+
+
+<div class="section-label">
+
+Proceso Ágil
+
+</div>
+
+<h2 class="section-title">
+
+
+
+</div>
+
+<div class="card">
+
+
+</section>
+<section class="section" id="marca">
+
+<div class="section-label">
+Identidad Corporativa
+</div>
+
+<h2 class="section-title">
+Manual de Marca INTERCELL
+</h2>
+
+<p class="section-intro">
+
+El presente manual establece los lineamientos para el uso correcto de la identidad visual de INTERCELL, permitiendo mantener una imagen corporativa uniforme en todos los medios físicos y digitales.
+
+</p>
+
+</section>
+
+<section class="section">
+
+<div class="cards-grid">
+
+<div class="card">
+
+<div class="card-icon">
+🏢
+</div>
+
+<div class="card-title">
+
+Misión
+
+</div>
+
+<div class="card-body">
+
+Ofrecer productos tecnológicos y servicios técnicos de alta calidad mediante una plataforma moderna, segura y eficiente que satisfaga las necesidades de nuestros clientes.
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+🚀
+</div>
+
+<div class="card-title">
+
+Visión
+
+</div>
+
+<div class="card-body">
+
+Ser una empresa reconocida por la innovación tecnológica y la excelencia en la comercialización de dispositivos electrónicos y servicios especializados.
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+⭐
+</div>
+
+<div class="card-title">
+
+Valores
+
+</div>
+
+<div class="card-body">
+
+Responsabilidad
+
+Innovación
+
+Calidad
+
+Compromiso
+
+Honestidad
+
+Servicio
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="section">
+
+<div class="section-label">
+Colores Corporativos
+</div>
+
+<div class="cards-grid">
+
+<div class="card">
+
+<div style="height:80px;background:#0F172A;border-radius:10px;"></div>
+
+<h3>Azul Oscuro</h3>
+
+<p>#0F172A</p>
+
+</div>
+
+<div class="card">
+
+<div style="height:80px;background:#2563EB;border-radius:10px;"></div>
+
+<h3>Azul Principal</h3>
+
+<p>#2563EB</p>
+
+</div>
+
+<div class="card">
+
+<div style="height:80px;background:#38BDF8;border-radius:10px;"></div>
+
+<h3>Celeste</h3>
+
+<p>#38BDF8</p>
+
+</div>
+
+<div class="card">
+
+<div style="height:80px;background:#F8FAFC;border-radius:10px;border:1px solid #ccc;"></div>
+
+<h3>Blanco</h3>
+
+<p>#F8FAFC</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="section-label">
+Tipografía
+</div>
+
+<div class="cards-grid">
+
+<div class="card">
+
+<div class="card-icon">
+🔤
+</div>
+
+<div class="card-title">
+
+Títulos
+
+</div>
+
+<div class="card-body">
+
+Syne
+
+Bold
+
+700
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+📝
+</div>
+
+<div class="card-title">
+
+Contenido
+
+</div>
+
+<div class="card-body">
+
+Inter
+
+Regular
+
+400
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+💻
+</div>
+
+<div class="card-title">
+
+Código
+
+</div>
+
+<div class="card-body">
+
+JetBrains Mono
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="section-label">
+
+Uso Correcto
+
+</div>
+
+<div class="cards-grid">
+
+<div class="card">
+
+<div class="card-icon">
+
+✅
+
+</div>
+
+<div class="card-title">
+
+Permitido
+
+</div>
+
+<div class="card-body">
+
+Mantener proporciones.
+
+Conservar colores.
+
+Respetar área de seguridad.
+
+Usar fondo limpio.
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+
+❌
+
+</div>
+
+<div class="card-title">
+
+No permitido
+
+</div>
+
+<div class="card-body">
+
+Estirar el logo.
+
+Rotarlo.
+
+Cambiar colores.
+
+Agregar sombras excesivas.
+
+Modificar la tipografía.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="section-label">
+
+Aplicaciones
+
+</div>
+
+<div class="cards-grid">
+
+<div class="card">
+
+<div class="card-icon">
+
+🌐
+
+</div>
+
+<div class="card-title">
+
+Sitio Web
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+
+📱
+
+</div>
+
+<div class="card-title">
+
+Aplicación Móvil
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+
+🪪
+
+</div>
+
+<div class="card-title">
+
+Carnés
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+
+📦
+
+</div>
+
+<div class="card-title">
+
+Empaques
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+
+📄
+
+</div>
+
+<div class="card-title">
+
+Papelería
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-icon">
+
+📢
+
+</div>
+
+<div class="card-title">
+
+Publicidad
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="conclusiones">
+
+<div class="section-label">
+
+Conclusiones
+
+</div>
+
+<h2 class="section-title">
+
+Conclusiones del Proyecto
+
+</h2>
+
+<p class="section-intro">
+
+El desarrollo de la plataforma web INTERCELL permite optimizar los procesos de venta, administración de productos, gestión de inventario y prestación de servicios técnicos mediante una solución informática moderna y escalable.
+
+La implementación de estándares como IEEE 830 e ISO/IEC 25010, junto con la aplicación de la metodología SCRUM y una arquitectura de tres capas, proporciona una base sólida para garantizar la calidad, mantenibilidad y evolución futura del sistema.
+
+La plataforma ofrece una experiencia de usuario intuitiva, mejora la eficiencia operativa de la empresa y fortalece su presencia digital mediante una solución tecnológica alineada con las necesidades del negocio.
+
+</p>
+
+</section>
+
+<section class="section">
+
+<div class="section-label">
+
+Recomendaciones
+
+</div>
+
+<h2 class="section-title">
+
+Recomendaciones
+
+</h2>
+
+<div class="req-list">
+
+<div class="req-item single">
+<div class="req-text">
+Implementar autenticación multifactor para aumentar la seguridad de las cuentas de usuario.
+</div>
+</div>
+
+<div class="req-item single">
+<div class="req-text">
+Realizar copias de seguridad automáticas de la base de datos de forma periódica.
+</div>
+</div>
+
+<div class="req-item single">
+<div class="req-text">
+Incorporar herramientas de analítica para medir el comportamiento de los usuarios y apoyar la toma de decisiones.
+</div>
+</div>
+
+<div class="req-item single">
+<div class="req-text">
+Desarrollar una aplicación móvil para ampliar el alcance de la plataforma.
+</div>
+</div>
+
+<div class="req-item single">
+<div class="req-text">
+Implementar un sistema de notificaciones en tiempo real para mejorar la comunicación con los clientes.
+</div>
+</div>
+
+</div>
+
+</section>
+
+  <!-- EVOLUCIÓN -->
+  <section class="section" id="evolucion">
+    <div class="section-label">Sección 2.6 · IEEE 830</div>
+    <h2 class="section-title">Evolución Previsible del Sistema</h2>
+    <p class="section-intro">Módulos y capacidades que podrán incorporarse en futuras versiones de INTERCELL.</p>
+    <div class="tl-grid">
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-title">📱 Aplicación Móvil Nativa</div><div class="tl-desc">Desarrollo de apps Android e iOS para mayor alcance y experiencia optimizada.</div></div>
+        <div class="tl-item"><div class="tl-title">🤖 Inteligencia Artificial</div><div class="tl-desc">Sistema de recomendaciones basado en historial de compras y preferencias del usuario.</div></div>
+        <div class="tl-item"><div class="tl-title">💬 Chat en Tiempo Real</div><div class="tl-desc">Comunicación instantánea entre clientes y soporte técnico mediante WebSockets.</div></div>
+        <div class="tl-item"><div class="tl-title">🌐 Integración con Redes Sociales</div><div class="tl-desc">Login social y publicación automática de productos y promociones.</div></div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-title">🧾 Facturación Electrónica</div><div class="tl-desc">Integración con la DIAN para generación y envío automático de facturas electrónicas.</div></div>
+        <div class="tl-item"><div class="tl-title">🏢 Integración ERP y CRM</div><div class="tl-desc">Conexión con sistemas de planificación de recursos y gestión de clientes.</div></div>
+        <div class="tl-item"><div class="tl-title">⭐ Sistema de Fidelización</div><div class="tl-desc">Programa de puntos canjeables, descuentos exclusivos y beneficios para clientes frecuentes.</div></div>
+      </div>
+    </div>
+
+
+    <!-- RESUMEN FINAL -->
+    <div class="resumen-final">
+      <div class="section-label center">Resumen Ejecutivo · ERS INTERCELL</div>
+      <h3 class="resumen-titulo">25 Requisitos Funcionales<br>+ 15 Restricciones · 6 Atributos de Calidad</h3>
+      <p class="resumen-desc">Documentación completa bajo IEEE Std 830-1998 para una plataforma e-commerce lista para implementación con stack tecnológico moderno y escalable.</p>
+      <div class="resumen-meta">
+        <div><div class="meta-label">Autora</div><div class="meta-val">María Camila Ortiz Gaitán</div></div>
+        <div class="meta-divider"></div>
+        <div><div class="meta-label">Programa</div><div class="meta-val">ADSO · Ficha 3275760</div></div>
+        <div class="meta-divider"></div>
+        <div><div class="meta-label">Norma</div><div class="meta-val">IEEE Std 830-1998</div></div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /main -->
+
+<script src="js/script.js"></script>
+</body>
+</html>
